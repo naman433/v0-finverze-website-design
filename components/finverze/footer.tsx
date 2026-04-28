@@ -16,6 +16,11 @@ export function Footer() {
             <p className="mt-4 text-background/70 max-w-sm leading-relaxed">
               Empowering students with lifelong financial discipline. From school to adulthood, we&apos;re your trusted financial partner.
             </p>
+            <p className="mt-4">
+              <a href="mailto:founder@finverze.com" className="text-primary hover:underline">
+                founder@finverze.com
+              </a>
+            </p>
             <div className="mt-6 flex gap-4">
               <a
                 href="https://linkedin.com"

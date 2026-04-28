@@ -1,74 +1,89 @@
-import { Target, Heart, TrendingUp } from "lucide-react"
+"use client"
+
+import { motion } from "framer-motion"
+import { BookOpen, Gamepad2, LineChart, TrendingUp } from "lucide-react"
+
+const pillars = [
+  {
+    icon: BookOpen,
+    title: "Learn",
+    description: "Through structured, expert-led courses",
+    color: "bg-blue-500/10 text-blue-600",
+  },
+  {
+    icon: Gamepad2,
+    title: "Apply",
+    description: "Through real-life challenges and games",
+    color: "bg-green-500/10 text-green-600",
+  },
+  {
+    icon: LineChart,
+    title: "Track",
+    description: "Through habits and financial tools",
+    color: "bg-amber-500/10 text-amber-600",
+  },
+  {
+    icon: TrendingUp,
+    title: "Grow",
+    description: "Into long-term financial decision makers",
+    color: "bg-purple-500/10 text-purple-600",
+  },
+]
 
 export function AboutSection() {
   return (
-    <section id="about" className="py-24 bg-card">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <span className="text-sm font-semibold text-primary uppercase tracking-wider">
-              About Finverze
-            </span>
-            <h2 className="mt-4 text-3xl sm:text-4xl font-bold text-foreground text-balance">
-              Building Financial Confidence from Day One
-            </h2>
-            <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-              Finverze is a lifestyle finance platform designed to nurture financial discipline from a young age, evolving into a lifelong financial partner. We believe that financial education shouldn&apos;t start when you get your first job—it should begin in school.
-            </p>
-            <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
-              Our platform combines engaging learning experiences, gamification, and personalized guidance to transform how young people think about and manage money.
-            </p>
+    <section id="about" className="py-20 md:py-28 bg-background">
+      <div className="container px-4 md:px-6 mx-auto max-w-6xl">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-16"
+        >
+          <span className="inline-block px-4 py-1.5 mb-4 text-sm font-medium bg-primary/10 text-primary rounded-full">
+            The Solution
+          </span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
+            What is Finverze?
+          </h2>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
+            Finverze is a lifestyle finance platform designed to build financial discipline early and guide students throughout life. We don&apos;t just teach finance—we help students practice it.
+          </p>
+        </motion.div>
 
-            <div className="mt-10 grid gap-6">
-              <div className="flex gap-4">
-                <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                  <Target className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground">Our Mission</h3>
-                  <p className="mt-1 text-muted-foreground">
-                    Make financial literacy accessible to every student, regardless of background.
-                  </p>
-                </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {pillars.map((pillar, index) => (
+            <motion.div
+              key={pillar.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="bg-card border border-border rounded-xl p-6 text-center hover:shadow-lg hover:border-primary/20 transition-all group"
+            >
+              <div
+                className={`w-14 h-14 ${pillar.color} rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform`}
+              >
+                <pillar.icon className="w-7 h-7" />
               </div>
-              <div className="flex gap-4">
-                <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                  <Heart className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground">Our Values</h3>
-                  <p className="mt-1 text-muted-foreground">
-                    Transparency, inclusivity, and empowerment guide everything we build.
-                  </p>
-                </div>
-              </div>
-              <div className="flex gap-4">
-                <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                  <TrendingUp className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground">Our Vision</h3>
-                  <p className="mt-1 text-muted-foreground">
-                    A generation of financially confident individuals shaping a better economy.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="relative">
-            <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 p-8 flex items-center justify-center">
-              <div className="text-center">
-                <div className="w-32 h-32 mx-auto rounded-full bg-primary/20 flex items-center justify-center mb-6">
-                  <span className="text-6xl font-bold text-primary">F</span>
-                </div>
-                <h3 className="text-2xl font-bold text-foreground">Finverze</h3>
-                <p className="mt-2 text-muted-foreground">Finance for Life</p>
-              </div>
-            </div>
-            <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-primary/10 rounded-2xl -z-10" />
-          </div>
+              <h3 className="text-xl font-bold text-foreground mb-2">{pillar.title}</h3>
+              <p className="text-muted-foreground">{pillar.description}</p>
+            </motion.div>
+          ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className="mt-12 text-center"
+        >
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            From basic money habits to wealth management, Finverze provides the tools, knowledge, and guidance students need at every stage of their financial journey.
+          </p>
+        </motion.div>
       </div>
     </section>
   )
