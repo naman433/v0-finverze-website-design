@@ -14,7 +14,7 @@ export function AboutSection() {
           className="text-center"
         >
           <span className="inline-block px-4 py-1.5 mb-4 text-sm font-medium bg-primary/10 text-primary rounded-full">
-            The Solution
+            Our Answer
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-8 text-balance">
             What is Finverze?
@@ -22,13 +22,13 @@ export function AboutSection() {
           
           <div className="space-y-6 text-lg md:text-xl text-muted-foreground leading-relaxed">
             <p>
-              Finverze is a lifestyle finance platform that helps students build financial discipline through structured learning, engagement, and real-life application.
+              Think of Finverze as a gym for your money habits. We do not just tell students what to do. We help them practice, build routines, and develop real financial discipline that sticks.
             </p>
             <p>
-              Unlike traditional finance education, Finverze focuses on <span className="text-foreground font-medium">behavior, not just knowledge</span>.
+              Most financial courses dump information and hope it sticks. We take a different approach. We focus on <span className="text-foreground font-medium">changing behavior, not just teaching concepts</span>.
             </p>
             <p className="text-foreground font-semibold text-xl md:text-2xl pt-4">
-              Students don&apos;t just learn — they practice.
+              Students do not just learn about money. They learn to manage it.
             </p>
           </div>
         </motion.div>

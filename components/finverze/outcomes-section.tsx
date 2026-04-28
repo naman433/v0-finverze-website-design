@@ -6,23 +6,23 @@ import { Wallet, Eye, PiggyBank, Award, Brain } from "lucide-react"
 const outcomes = [
   {
     icon: Wallet,
-    title: "Better Understanding of Money",
+    title: "They understand where money comes from and where it goes",
   },
   {
     icon: Eye,
-    title: "Improved Spending Awareness",
+    title: "They think before they spend",
   },
   {
     icon: PiggyBank,
-    title: "Basic Saving Discipline",
+    title: "They start saving, even small amounts",
   },
   {
     icon: Award,
-    title: "Confidence in Financial Decisions",
+    title: "They feel confident making money decisions",
   },
   {
     icon: Brain,
-    title: "Early Exposure to Financial Thinking",
+    title: "They develop a healthy relationship with money early",
   },
 ]
 
@@ -38,10 +38,10 @@ export function OutcomesSection() {
           className="text-center mb-16"
         >
           <span className="inline-block px-4 py-1.5 mb-4 text-sm font-medium bg-primary/10 text-primary rounded-full">
-            Results
+            The Results
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
-            What Students Gain
+            What Students Walk Away With
           </h2>
         </motion.div>
 

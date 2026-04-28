@@ -6,23 +6,23 @@ import { BookX, TrendingDown, GraduationCap, AlertTriangle } from "lucide-react"
 const problems = [
   {
     icon: BookX,
-    title: "No Practical Education",
-    description: "No practical financial education in schools",
+    title: "Schools Skip the Basics",
+    description: "Nobody teaches students how to budget, save, or spend wisely. They learn algebra but not how to manage their first salary.",
   },
   {
     icon: TrendingDown,
-    title: "Poor Habits Develop Early",
-    description: "Poor spending habits develop early",
+    title: "Bad Habits Start Young",
+    description: "Without guidance, students pick up poor spending habits early on, habits that follow them into adulthood.",
   },
   {
     icon: GraduationCap,
-    title: "Unprepared for Adulthood",
-    description: "Students enter adulthood without money management skills",
+    title: "Thrown Into the Deep End",
+    description: "Most students graduate and suddenly have to handle rent, bills, and savings without any preparation.",
   },
   {
     icon: AlertTriangle,
-    title: "Learning Through Mistakes",
-    description: "Financial decisions are learned through mistakes",
+    title: "Expensive Lessons",
+    description: "When financial education comes only through mistakes like debt or bad investments, the cost is too high.",
   },
 ]
 
@@ -38,13 +38,13 @@ export function ProblemSection() {
           className="text-center mb-16"
         >
           <span className="inline-block px-4 py-1.5 mb-4 text-sm font-medium bg-destructive/10 text-destructive rounded-full">
-            The Challenge
+            The Problem
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
-            Why Financial Discipline Needs to Start Early
+            Why This Matters Now
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Students today grow up without structured financial guidance.
+            Ask any young adult about their biggest regret. Chances are, it involves money. Here is why we need to start earlier.
           </p>
         </motion.div>
 
@@ -75,7 +75,7 @@ export function ProblemSection() {
           className="bg-muted/50 border border-border rounded-2xl p-8 md:p-10 text-center"
         >
           <p className="text-xl md:text-2xl text-foreground font-semibold">
-            Financial discipline is not taught — but it is essential.
+            The good news? This can change. Financial discipline can be taught, and the earlier we start, the better.
           </p>
         </motion.div>
       </div>

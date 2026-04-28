@@ -55,13 +55,13 @@ export function ContactSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <span className="text-sm font-semibold text-primary uppercase tracking-wider">
-            Contact
+            Reach Out
           </span>
           <h2 className="mt-4 text-3xl sm:text-4xl font-bold text-foreground text-balance">
-            Get in Touch
+            Have Questions? Let us Chat
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            For partnerships, programs, or inquiries:
+            Whether you are an educator, parent, or just curious about what we do, we would love to hear from you.
           </p>
         </div>
 
@@ -108,9 +108,9 @@ export function ContactSection() {
             {isSubmitted ? (
               <div className="h-full flex flex-col items-center justify-center text-center py-12">
                 <CheckCircle2 className="h-16 w-16 text-primary mb-4" />
-                <h3 className="text-2xl font-bold text-foreground">Message Sent!</h3>
+                <h3 className="text-2xl font-bold text-foreground">Got It</h3>
                 <p className="mt-2 text-muted-foreground">
-                  Thank you for reaching out. We&apos;ll get back to you soon.
+                  Thanks for reaching out. We will get back to you shortly.
                 </p>
               </div>
             ) : (
@@ -126,7 +126,7 @@ export function ContactSection() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    placeholder="Your name"
+                    placeholder="eg Arjun Reddy"
                     className="h-12"
                   />
                 </div>
@@ -141,7 +141,7 @@ export function ContactSection() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    placeholder="you@example.com"
+                    placeholder="arjun@email.com"
                     className="h-12"
                   />
                 </div>
@@ -155,7 +155,7 @@ export function ContactSection() {
                     required
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="How can we help you?"
+                    placeholder="What would you like to know?"
                     rows={4}
                     className="resize-none"
                   />
@@ -164,7 +164,7 @@ export function ContactSection() {
                   <p className="text-sm text-red-500">{error}</p>
                 )}
                 <Button type="submit" size="lg" className="w-full h-12" disabled={isLoading}>
-                  {isLoading ? "Sending..." : "Contact Us"}
+                  {isLoading ? "Sending..." : "Send Message"}
                 </Button>
               </form>
             )}

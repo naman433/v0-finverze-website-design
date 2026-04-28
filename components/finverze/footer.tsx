@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export function Footer() {
   return (
@@ -8,13 +9,16 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <Link href="/" className="flex items-center gap-2">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
-                <span className="text-lg font-bold text-primary-foreground">F</span>
-              </div>
-              <span className="text-xl font-bold text-background">Finverze</span>
+              <Image
+                src="/images/finverze-logo.png"
+                alt="Finverze"
+                width={140}
+                height={48}
+                className="h-10 w-auto brightness-0 invert"
+              />
             </Link>
             <p className="mt-4 text-background/70 max-w-sm leading-relaxed">
-              Empowering Financial Discipline for the Next Generation.
+              Helping students build real financial habits that last a lifetime.
             </p>
             <p className="mt-4">
               <a href="mailto:founder@finverze.com" className="text-primary hover:underline">

@@ -14,18 +14,18 @@ export function AboutTrustSection() {
           className="text-center"
         >
           <span className="inline-block px-4 py-1.5 mb-4 text-sm font-medium bg-primary/10 text-primary rounded-full">
-            About Us
+            Who We Are
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-8 text-balance">
-            About Finverze
+            Why We Started Finverze
           </h2>
           
           <div className="space-y-6 text-lg md:text-xl text-muted-foreground leading-relaxed">
             <p>
-              Finverze is built with the vision of making financial discipline a core life skill for every student.
+              We started Finverze because we saw too many young people struggle with money, not because they were irresponsible, but because nobody ever taught them.
             </p>
             <p>
-              We aim to bridge the gap between education and real-world financial behavior by introducing structured, practical, and engaging systems.
+              Our mission is simple: make financial discipline a skill every student learns, just like reading or math. We believe that when you teach someone to manage money well, you change the course of their entire life.
             </p>
           </div>
         </motion.div>

@@ -10,23 +10,23 @@ import { Textarea } from "@/components/ui/textarea"
 const offerings = [
   {
     icon: Users,
-    title: "Professionally Conducted Sessions",
-    description: "Expert-led workshops tailored for student engagement",
+    title: "Sessions That Connect",
+    description: "Our facilitators know how to engage students, making finance relatable and even enjoyable",
   },
   {
     icon: Calendar,
-    title: "Structured Student Programs",
-    description: "2-3 week comprehensive curriculum with practical modules",
+    title: "Ready to Go Programs",
+    description: "A complete 2 to 3 week curriculum that fits into your academic calendar without hassle",
   },
   {
     icon: BarChart3,
-    title: "High Student Engagement",
-    description: "Interactive activities and challenges that drive participation",
+    title: "Students Actually Participate",
+    description: "Challenges and activities that get students involved, not just sitting and listening",
   },
   {
     icon: CheckCircle2,
-    title: "Practical Learning Outcomes",
-    description: "Measurable improvement in financial awareness and habits",
+    title: "Results You Can See",
+    description: "Students walk away with real skills and changed attitudes toward money",
   },
 ]
 
@@ -85,13 +85,13 @@ export function InstitutionsSection() {
           className="text-center mb-16"
         >
           <span className="inline-block px-4 py-1.5 mb-4 text-sm font-medium bg-primary/10 text-primary rounded-full">
-            For Partners
+            For Schools and Colleges
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
-            Designed for Educational Institutions
+            Partner With Us
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Finverze works with schools and colleges to introduce financial discipline in a structured and engaging format.
+            We work with institutions that want to give their students more than just academic knowledge. If you believe your students deserve practical life skills, let us talk.
           </p>
         </motion.div>
 
@@ -107,7 +107,7 @@ export function InstitutionsSection() {
               <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
                 <Building2 className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-2xl font-bold text-foreground">What Institutions Get</h3>
+              <h3 className="text-2xl font-bold text-foreground">What Your Institution Gets</h3>
             </div>
 
             <div className="space-y-4">
@@ -133,7 +133,7 @@ export function InstitutionsSection() {
 
             <div className="mt-8 p-6 bg-card rounded-xl border border-border">
               <p className="text-muted-foreground">
-                <span className="font-semibold text-foreground">A value-added initiative</span> for student development beyond academics.
+                <span className="font-semibold text-foreground">Give your students an edge</span> by teaching them something they will use every single day of their lives.
               </p>
             </div>
           </motion.div>
@@ -151,16 +151,16 @@ export function InstitutionsSection() {
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <CheckCircle2 className="w-8 h-8 text-green-600" />
                 </div>
-                <h3 className="text-xl font-bold text-foreground mb-2">Request Received</h3>
+                <h3 className="text-xl font-bold text-foreground mb-2">Thank You</h3>
                 <p className="text-muted-foreground">
-                  Thank you for your interest. Our team will reach out within 24-48 hours.
+                  We have received your details and will reach out within a day or two. Looking forward to speaking with you.
                 </p>
               </div>
             ) : (
               <>
-                <h3 className="text-xl font-bold text-foreground mb-2">Request a Program</h3>
+                <h3 className="text-xl font-bold text-foreground mb-2">Let us Talk</h3>
                 <p className="text-muted-foreground mb-6">
-                  Fill in your details and we&apos;ll create a customized proposal for your institution.
+                  Share your details and we will get in touch to understand your needs and put together a program that fits.
                 </p>
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
@@ -169,7 +169,7 @@ export function InstitutionsSection() {
                     </label>
                     <Input
                       id="institutionName"
-                      placeholder="e.g., Delhi University"
+                      placeholder="eg St. Xavier's College, Bangalore"
                       value={formData.institutionName}
                       onChange={(e) => setFormData({ ...formData, institutionName: e.target.value })}
                       required
@@ -182,7 +182,7 @@ export function InstitutionsSection() {
                     </label>
                     <Input
                       id="contactName"
-                      placeholder="Your name"
+                      placeholder="eg Priya Sharma"
                       value={formData.contactName}
                       onChange={(e) => setFormData({ ...formData, contactName: e.target.value })}
                       required
@@ -196,7 +196,7 @@ export function InstitutionsSection() {
                     <Input
                       id="email"
                       type="email"
-                      placeholder="you@institution.edu"
+                      placeholder="priya@college.edu.in"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       required
@@ -210,7 +210,7 @@ export function InstitutionsSection() {
                     <Input
                       id="phone"
                       type="tel"
-                      placeholder="+91 9876543210"
+                      placeholder="9876543210"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       className="h-11"
@@ -222,7 +222,7 @@ export function InstitutionsSection() {
                     </label>
                     <Textarea
                       id="message"
-                      placeholder="Tell us about your institution and goals..."
+                      placeholder="Tell us a bit about your institution and what you are looking for..."
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       rows={3}

@@ -6,23 +6,23 @@ import { BookOpen, Gamepad2, Brain, ArrowRight } from "lucide-react"
 const approaches = [
   {
     icon: BookOpen,
-    title: "Education",
-    description: "Simple and structured financial concepts",
+    title: "Clear Education",
+    description: "We explain money concepts in plain language that students actually understand and remember",
   },
   {
     icon: Gamepad2,
-    title: "Engagement",
-    description: "Activities and challenges",
+    title: "Active Engagement",
+    description: "Challenges, activities, and real scenarios keep students interested and involved",
   },
   {
     icon: Brain,
-    title: "Behavior",
-    description: "Focus on habit building",
+    title: "Behavior First",
+    description: "We focus on building habits, not just sharing information that gets forgotten",
   },
   {
     icon: ArrowRight,
-    title: "Continuity",
-    description: "Designed to grow with students over time",
+    title: "Grows with Them",
+    description: "What students learn today stays relevant as they move through life stages",
   },
 ]
 
@@ -38,13 +38,13 @@ export function ApproachSection() {
           className="text-center mb-16"
         >
           <span className="inline-block px-4 py-1.5 mb-4 text-sm font-medium bg-primary/10 text-primary rounded-full">
-            Our Method
+            What Makes Us Different
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
             Our Approach
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Finverze combines multiple elements to create lasting change.
+            We have seen what does not work in financial education. So we built something different.
           </p>
         </motion.div>
 
@@ -75,7 +75,7 @@ export function ApproachSection() {
           className="bg-primary/5 border border-primary/20 rounded-2xl p-8 md:p-10 text-center"
         >
           <p className="text-xl md:text-2xl text-foreground font-semibold">
-            We focus on building habits, not just delivering content.
+            We are not here to lecture. We are here to help students build habits that last.
           </p>
         </motion.div>
       </div>

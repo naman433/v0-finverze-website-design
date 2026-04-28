@@ -7,32 +7,32 @@ const steps = [
   {
     icon: Users,
     step: "01",
-    title: "Awareness Session",
-    description: "We begin with an interactive workshop introducing financial discipline concepts.",
+    title: "We Start with a Conversation",
+    description: "Our first session is an eye opener. We get students thinking about money in ways they never have before, no lectures, just real talk.",
   },
   {
     icon: BookOpen,
     step: "02",
-    title: "Structured Program",
-    description: "Students go through a guided 2-3 week program with simple, practical modules.",
+    title: "A Simple, Structured Program",
+    description: "Over 2 to 3 weeks, students go through bite sized modules that are easy to follow. Each one builds on the last, no jargon, no overwhelm.",
   },
   {
     icon: Gamepad2,
     step: "03",
-    title: "Engagement & Challenges",
-    description: "Students participate in challenges and activities that encourage real-life application.",
+    title: "Learning by Doing",
+    description: "This is where it gets fun. Students take on challenges, track their spending, set small goals, and actually practice what they have learned.",
   },
   {
     icon: Target,
     step: "04",
-    title: "Habit Building",
-    description: "Focus on developing consistent financial behaviors like saving and mindful spending.",
+    title: "Building Real Habits",
+    description: "We do not stop at awareness. We help students turn good intentions into daily habits, like saving a little each week or thinking twice before spending.",
   },
   {
     icon: CheckCircle2,
     step: "05",
-    title: "Outcome",
-    description: "Students leave with improved financial awareness and practical habits.",
+    title: "Walking Away Prepared",
+    description: "By the end, students have a real understanding of money and the confidence to handle it wisely, skills that stay with them for life.",
   },
 ]
 
@@ -48,13 +48,13 @@ export function HowItWorksSection() {
           className="text-center max-w-3xl mx-auto"
         >
           <span className="text-sm font-semibold text-primary uppercase tracking-wider">
-            The Process
+            How It Works
           </span>
           <h2 className="mt-4 text-3xl sm:text-4xl font-bold text-foreground text-balance">
-            How Finverze Works
+            Simple Steps, Lasting Impact
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            A clear and simple approach to building financial discipline in students.
+            We have designed a process that actually works. No boring textbooks, no complicated theories, just practical steps that lead to real change.
           </p>
         </motion.div>
 
