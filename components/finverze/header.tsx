@@ -9,12 +9,11 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const navLinks = [
-    { href: "#problem", label: "Problem" },
-    { href: "#about", label: "Solution" },
-    { href: "#journey", label: "Journey" },
-    { href: "#features", label: "Features" },
-    { href: "#institutions", label: "For Colleges" },
-    { href: "#pricing", label: "Pricing" },
+    { href: "#about", label: "What is Finverze" },
+    { href: "#how-it-works", label: "How It Works" },
+    { href: "#institutions", label: "For Institutions" },
+    { href: "#outcomes", label: "Outcomes" },
+    { href: "#contact", label: "Contact" },
   ]
 
   return (
@@ -41,11 +40,8 @@ export function Header() {
           </nav>
 
           <div className="hidden md:flex items-center gap-3">
-            <Button variant="ghost" asChild>
-              <Link href="#contact">Contact</Link>
-            </Button>
             <Button asChild>
-              <Link href="#waitlist">Join Waitlist</Link>
+              <Link href="#institutions">Request a Program</Link>
             </Button>
           </div>
 
@@ -76,12 +72,9 @@ export function Header() {
                 {link.label}
               </Link>
             ))}
-            <div className="pt-3 space-y-2">
-              <Button variant="outline" className="w-full" asChild>
-                <Link href="#contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
-              </Button>
+            <div className="pt-3">
               <Button className="w-full" asChild>
-                <Link href="#waitlist" onClick={() => setMobileMenuOpen(false)}>Join Waitlist</Link>
+                <Link href="#institutions" onClick={() => setMobileMenuOpen(false)}>Request a Program</Link>
               </Button>
             </div>
           </div>

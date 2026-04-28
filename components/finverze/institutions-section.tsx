@@ -10,23 +10,23 @@ import { Textarea } from "@/components/ui/textarea"
 const offerings = [
   {
     icon: Users,
-    title: "Workshops & Awareness Sessions",
-    description: "Interactive sessions to introduce financial discipline concepts",
+    title: "Professionally Conducted Sessions",
+    description: "Expert-led workshops tailored for student engagement",
   },
   {
     icon: Calendar,
-    title: "2-3 Week Structured Programs",
-    description: "Comprehensive curriculum designed for student engagement",
+    title: "Structured Student Programs",
+    description: "2-3 week comprehensive curriculum with practical modules",
   },
   {
     icon: BarChart3,
-    title: "Student Engagement Challenges",
-    description: "Gamified activities that drive participation and learning",
+    title: "High Student Engagement",
+    description: "Interactive activities and challenges that drive participation",
   },
   {
     icon: CheckCircle2,
-    title: "Measurable Outcomes",
-    description: "Track participation, progress, and behavior change",
+    title: "Practical Learning Outcomes",
+    description: "Measurable improvement in financial awareness and habits",
   },
 ]
 
@@ -88,10 +88,10 @@ export function InstitutionsSection() {
             For Partners
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
-            For Colleges & Institutions
+            Designed for Educational Institutions
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Finverze partners with colleges to deliver financial discipline programs that create lasting impact.
+            Finverze works with schools and colleges to introduce financial discipline in a structured and engaging format.
           </p>
         </motion.div>
 
@@ -107,7 +107,7 @@ export function InstitutionsSection() {
               <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
                 <Building2 className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-2xl font-bold text-foreground">What We Offer</h3>
+              <h3 className="text-2xl font-bold text-foreground">What Institutions Get</h3>
             </div>
 
             <div className="space-y-4">
@@ -132,8 +132,8 @@ export function InstitutionsSection() {
             </div>
 
             <div className="mt-8 p-6 bg-card rounded-xl border border-border">
-              <p className="text-muted-foreground text-sm">
-                <span className="font-semibold text-foreground">Flexible Pricing:</span> Programs are customized based on institution size and program depth. Contact us for a tailored proposal.
+              <p className="text-muted-foreground">
+                <span className="font-semibold text-foreground">A value-added initiative</span> for student development beyond academics.
               </p>
             </div>
           </motion.div>

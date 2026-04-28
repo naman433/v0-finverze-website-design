@@ -1,28 +1,28 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { AlertCircle, BookX, TrendingDown, HelpCircle } from "lucide-react"
+import { BookX, TrendingDown, GraduationCap, AlertTriangle } from "lucide-react"
 
 const problems = [
   {
     icon: BookX,
-    title: "No Financial Education",
-    description: "Schools don't teach how to manage money",
+    title: "No Practical Education",
+    description: "No practical financial education in schools",
   },
   {
     icon: TrendingDown,
-    title: "Poor Spending Habits",
-    description: "Bad financial habits form from a young age",
+    title: "Poor Habits Develop Early",
+    description: "Poor spending habits develop early",
   },
   {
-    icon: HelpCircle,
-    title: "No Guidance in College",
-    description: "Students are left to figure it out alone",
+    icon: GraduationCap,
+    title: "Unprepared for Adulthood",
+    description: "Students enter adulthood without money management skills",
   },
   {
-    icon: AlertCircle,
-    title: "Confusion About Investing",
-    description: "No clear path to saving and growing wealth",
+    icon: AlertTriangle,
+    title: "Learning Through Mistakes",
+    description: "Financial decisions are learned through mistakes",
   },
 ]
 
@@ -41,10 +41,10 @@ export function ProblemSection() {
             The Challenge
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
-            The Problem We&apos;re Solving
+            Why Financial Discipline Needs to Start Early
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Students are never taught how to manage money. This gap creates lifelong financial struggles.
+            Students today grow up without structured financial guidance.
           </p>
         </motion.div>
 
@@ -74,9 +74,8 @@ export function ProblemSection() {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="bg-muted/50 border border-border rounded-2xl p-8 md:p-10 text-center"
         >
-          <p className="text-lg md:text-xl text-foreground font-medium mb-2">The Result?</p>
-          <p className="text-muted-foreground text-lg">
-            Most people learn about money only after making costly mistakes.
+          <p className="text-xl md:text-2xl text-foreground font-semibold">
+            Financial discipline is not taught — but it is essential.
           </p>
         </motion.div>
       </div>
