@@ -156,7 +156,7 @@ export default function Home() {
 
       <section id="contact" className="mx-auto max-w-3xl px-6 py-20 text-center">
         <h2 className="text-3xl font-semibold md:text-5xl">Let’s Bring Financial Discipline to Your Campus</h2>
-        <form className="mt-10 grid gap-4 text-left" action="mailto:founder@finverze.com" method="post" encType="text/plain">
+        <form className="mt-10 grid gap-4 text-left" action="https://formspree.io/f/xnjwqyyq" method="POST">
           <input className="rounded-xl border border-slate-300 px-4 py-3" placeholder="Name" name="name" required />
           <input className="rounded-xl border border-slate-300 px-4 py-3" placeholder="College Name" name="college" required />
           <select className="rounded-xl border border-slate-300 px-4 py-3" name="role" required>
@@ -167,7 +167,9 @@ export default function Home() {
           </select>
           <input className="rounded-xl border border-slate-300 px-4 py-3" placeholder="Phone" name="phone" required />
           <input type="email" className="rounded-xl border border-slate-300 px-4 py-3" placeholder="Email" name="email" required />
-          <button className="rounded-xl bg-slate-900 px-6 py-3 text-white hover:bg-blue-700">Submit</button>
+          <textarea className="rounded-xl border border-slate-300 px-4 py-3 min-h-28" placeholder="What outcome do you want for your students?" name="message" required />
+          <input type="hidden" name="_subject" value="New Finverze campus inquiry" />
+          <button type="submit" className="rounded-xl bg-slate-900 px-6 py-3 text-white hover:bg-blue-700">Let's Connect</button>
         </form>
       </section>
 
