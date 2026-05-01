@@ -1,5 +1,4 @@
 import Link from "next/link"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, ChevronDown } from "lucide-react"
 
@@ -15,18 +14,6 @@ export function HeroSection() {
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 md:py-28">
         <div className="text-center max-w-4xl mx-auto">
-          {/* Logo above headline */}
-          <div className="flex justify-center mb-8">
-            <Image
-              src="/images/finverze-logo.png"
-              alt="Finverze"
-              width={180}
-              height={60}
-              className="h-16 w-auto"
-              priority
-            />
-          </div>
-
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground tracking-tight text-balance leading-tight">
             Teaching Students to{" "}
             <span className="text-primary">Manage Money</span>{" "}
