@@ -1,111 +1,163 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, BookOpen, CheckCircle2, GraduationCap, HeartHandshake, Lightbulb, Sparkles, Target, Users } from "lucide-react"
+import { ArrowRight, BookOpen, Briefcase, Building2, CheckCircle2, ChevronRight, GraduationCap, Lightbulb, Mail, Phone, ShieldCheck, Users } from "lucide-react"
 
-const sections = [
-  "Finance feels overwhelming, not practical",
-  "Students know terms, but habits are missing",
-  "Colleges need structured life-skill programs",
-]
-
-const dayFlow = [
-  "Day 1 · Money Mindset",
-  "Day 2 · Budgeting Basics",
-  "Day 3 · Saving Systems",
-  "Day 4 · Smart Spending",
-  "Day 5 · Investing Basics",
-  "Day 6 · Real-Life Decisions",
-  "Day 7 · Habit Implementation",
+const days = [
+  "Day 1 — Money Mindset",
+  "Day 2 — Budgeting Basics",
+  "Day 3 — Saving Systems",
+  "Day 4 — Smart Spending",
+  "Day 5 — Investing Basics",
+  "Day 6 — Real Decisions",
+  "Day 7 — Habit Building",
 ]
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#061a2d] text-white">
-      <div className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_15%_15%,rgba(22,163,74,0.2),transparent_35%),radial-gradient(circle_at_80%_0,rgba(30,144,255,0.28),transparent_40%),linear-gradient(180deg,#061a2d_0%,#0A2540_100%)]" />
+    <main className="min-h-screen bg-[#0A2540] text-white">
+      <div className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_10%_10%,rgba(30,144,255,0.24),transparent_35%),radial-gradient(circle_at_88%_0,rgba(20,184,166,0.16),transparent_40%),linear-gradient(180deg,#0A2540_0%,#07192c_100%)]" />
 
-      <header className="sticky top-0 z-50 border-b border-emerald-400/20 bg-[#061a2d]/80 backdrop-blur-xl">
-        <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          <Link href="#" aria-label="Finverze home" className="inline-flex">
-            <Image src="/images/finverze-logo.png" alt="Finverze logo" width={72} height={72} className="h-14 w-14 drop-shadow-[0_0_18px_rgba(30,144,255,0.9)]" />
+      <header className="sticky top-0 z-50 h-[72px] border-b border-white/10 bg-[rgba(10,37,64,0.7)] backdrop-blur-xl">
+        <nav className="mx-auto flex h-full w-full max-w-[1200px] items-center justify-between px-6 lg:px-20">
+          <Link href="#" className="inline-flex" aria-label="Finverze home">
+            <Image src="/images/finverze-logo.png" alt="Finverze" width={56} height={56} className="h-12 w-12 drop-shadow-[0_0_14px_rgba(30,144,255,0.85)]" />
           </Link>
           <div className="hidden items-center gap-6 text-sm text-white/80 md:flex">
-            <a href="#program" className="hover:text-emerald-300">Program</a>
-            <a href="#benefits" className="hover:text-emerald-300">Benefits</a>
-            <a href="#contact" className="hover:text-emerald-300">Contact</a>
+            <a href="#about" className="hover:text-[#8cc8ff]">About</a>
+            <a href="#program" className="hover:text-[#8cc8ff]">Program</a>
+            <a href="#colleges" className="hover:text-[#8cc8ff]">Colleges</a>
+            <a href="#contact" className="hover:text-[#8cc8ff]">Contact</a>
+            <Link href="#contact" className="rounded-[10px] bg-[#1E90FF] px-5 py-3 font-medium text-white transition hover:shadow-[0_0_24px_rgba(30,144,255,0.6)]">Book a Session</Link>
           </div>
-          <Link href="#contact" className="rounded-xl bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-slate-950 transition hover:bg-emerald-400">Book Session</Link>
         </nav>
       </header>
 
-      <section className="mx-auto grid min-h-[84vh] max-w-7xl items-center gap-10 px-6 py-16 lg:grid-cols-2">
-        <div className="text-center lg:text-left">
-          <p className="inline-flex items-center gap-2 rounded-full border border-emerald-400/30 bg-emerald-400/10 px-4 py-2 text-sm text-emerald-300"><Sparkles className="h-4 w-4" /> Human-first financial learning</p>
-          <h1 className="mt-6 text-4xl font-bold leading-tight md:text-6xl">Build financially smart students, one real habit at a time.</h1>
-          <p className="mx-auto mt-5 max-w-xl text-lg text-white/75 lg:mx-0">Finverze runs a simple 7-day discipline program that students actually follow and colleges can deploy easily.</p>
-          <div className="mt-9 flex flex-wrap justify-center gap-4 lg:justify-start">
-            <Link href="#contact" className="rounded-xl bg-emerald-500 px-7 py-3 font-semibold text-slate-950">Book a Session</Link>
-            <Link href="#program" className="rounded-xl border border-white/25 bg-white/5 px-7 py-3">View Program</Link>
+      <section id="about" className="mx-auto grid w-full max-w-[1200px] grid-cols-1 gap-8 px-6 py-[100px] lg:grid-cols-12 lg:px-20">
+        <div className="lg:col-span-6">
+          <h1 className="text-5xl font-bold leading-[1.1] md:text-6xl">Build Financially Smart Students — Not Just Graduates.</h1>
+          <p className="mt-6 max-w-[480px] text-lg text-white/75">Finverze delivers structured, practical financial discipline programs that colleges can run with confidence.</p>
+          <div className="mt-8 flex flex-wrap gap-4">
+            <Link href="#contact" className="rounded-[10px] bg-[#1E90FF] px-6 py-3 font-medium transition hover:shadow-[0_0_24px_rgba(30,144,255,0.6)]">Book a Session</Link>
+            <Link href="#program" className="rounded-[10px] border border-white/20 bg-white/5 px-6 py-3">View Program</Link>
+          </div>
+          <div className="mt-8 flex flex-wrap gap-4 text-sm text-white/80">
+            {["Practical learning", "Designed for students", "Easy to implement"].map((point) => (
+              <p key={point} className="inline-flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-emerald-300" /> {point}</p>
+            ))}
           </div>
         </div>
-        <div className="grid gap-4">
-          <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1400&q=80" alt="Students in collaborative classroom session" className="h-56 w-full rounded-2xl object-cover border border-white/20" />
-          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1400&q=80" alt="Mentor guiding learners through workshop" className="h-56 w-full rounded-2xl object-cover border border-white/20" />
+        <div className="lg:col-span-6">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=80" alt="Students in workshop" className="h-full min-h-[360px] w-full rounded-2xl object-cover shadow-[0_24px_56px_rgba(0,0,0,0.35)] transition duration-500 hover:-translate-y-1" />
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 pb-20 text-center">
-        <div className="grid gap-4 md:grid-cols-3">
-          {sections.map((item) => (
-            <div key={item} className="rounded-xl border border-emerald-400/20 bg-white/5 p-5 text-white/85">{item}</div>
+      <section className="bg-[#112f4d]/80 py-8">
+        <div className="mx-auto grid w-full max-w-[1200px] gap-4 px-6 md:grid-cols-3 lg:px-20">
+          {[[GraduationCap, "Designed for college students"], [BookOpen, "Real-world financial learning"], [ShieldCheck, "Structured 7-day program"]].map(([Icon, text]) => (
+            <div key={text as string} className="rounded-xl border border-white/10 bg-white/5 p-4 text-center">
+              {Icon && <Icon className="mx-auto h-5 w-5 text-[#90cbff]" />}<p className="mt-2 text-sm text-white/85">{text}</p>
+            </div>
           ))}
         </div>
       </section>
 
-      <section id="program" className="mx-auto max-w-7xl px-6 pb-20 text-center">
+      <section className="mx-auto w-full max-w-[1200px] px-6 py-[100px] text-center lg:px-20">
+        <h2 className="text-4xl font-bold">Nobody teaches you money. But you're expected to manage it.</h2>
+        <div className="mt-8 grid gap-4 md:grid-cols-3">
+          {["Earning without spending control", "No habit-focused financial discipline", "Too much theory, too little action"].map((item) => (
+            <div key={item} className="rounded-xl border border-white/15 bg-white/10 p-6 backdrop-blur transition hover:-translate-y-1 hover:shadow-[0_0_24px_rgba(30,144,255,0.25)]">
+              <Lightbulb className="mx-auto h-6 w-6 text-emerald-300" />
+              <p className="mt-3 font-semibold">Problem</p>
+              <p className="mt-1 text-sm text-white/80">{item}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="mx-auto grid w-full max-w-[1200px] grid-cols-1 gap-8 px-6 pb-[100px] lg:grid-cols-12 lg:px-20">
+        <div className="lg:col-span-6">
+          <h2 className="text-4xl font-bold">Finverze bridges the gap between theory and real-life money skills.</h2>
+          <ul className="mt-6 space-y-3 text-white/85">
+            {['Practical, not theoretical','Habit-based learning','Structured program','Real-world scenarios'].map((item)=><li key={item} className="inline-flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-emerald-300" />{item}</li>)}
+          </ul>
+        </div>
+        <div className="lg:col-span-6">
+          <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1400&q=80" alt="Students learning in class" className="h-full min-h-[320px] w-full rounded-2xl object-cover" />
+        </div>
+      </section>
+
+      <section id="program" className="mx-auto w-full max-w-[1200px] px-6 pb-[100px] text-center lg:px-20">
         <h2 className="text-4xl font-bold">The Finverze 7-Day Financial Discipline Program</h2>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {dayFlow.map((day) => (
-            <div key={day} className="rounded-xl border border-emerald-400/20 bg-gradient-to-b from-white/10 to-white/5 p-4">{day}</div>
+          {days.map((day) => (
+            <div key={day} className="rounded-xl border border-white/15 bg-white/10 p-5 transition hover:-translate-y-1 hover:border-[#1E90FF]/70">{day}</div>
           ))}
         </div>
       </section>
 
-      <section id="benefits" className="mx-auto max-w-7xl px-6 pb-20 text-center">
-        <h2 className="text-4xl font-bold">Why colleges and students choose Finverze</h2>
+      <section id="colleges" className="mx-auto grid w-full max-w-[1200px] grid-cols-1 gap-8 px-6 pb-[100px] lg:grid-cols-12 lg:px-20">
+        <div className="lg:col-span-6">
+          <h2 className="text-4xl font-bold">Why Colleges Choose Finverze</h2>
+          <ul className="mt-6 space-y-3 text-white/85">
+            {['Improves life skills','Enhances employability','Adds academic value','Easy implementation'].map((item)=><li key={item} className="inline-flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-emerald-300" />{item}</li>)}
+          </ul>
+        </div>
+        <div className="lg:col-span-6"><img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=1400&q=80" alt="Seminar presentation" className="h-full min-h-[320px] w-full rounded-2xl object-cover" /></div>
+      </section>
+
+      <section className="mx-auto w-full max-w-[1200px] px-6 pb-[100px] lg:px-20">
+        <h2 className="text-center text-4xl font-bold">How It Works</h2>
         <div className="mt-8 grid gap-4 md:grid-cols-4">
-          {[[Users, "Practical money habits"], [GraduationCap, "Better student confidence"], [BookOpen, "Structured 7-day delivery"], [HeartHandshake, "Human, mentor-led sessions"]].map(([Icon, label]) => (
-            <div key={label as string} className="rounded-xl border border-emerald-400/20 bg-white/5 p-5">
-              {Icon && <Icon className="mx-auto h-6 w-6 text-emerald-300" />}
-              <p className="mt-3 text-sm text-white/85">{label}</p>
-            </div>
-          ))}
-        </div>
-        <div className="mt-8 grid gap-4 md:grid-cols-3">
-          {[[Lightbulb, "Simple onboarding"], [Target, "Clear outcomes"], [CheckCircle2, "Easy implementation"]].map(([Icon, label]) => (
-            <div key={label as string} className="rounded-xl border border-white/20 bg-white/5 p-5">
-              {Icon && <Icon className="mx-auto h-6 w-6 text-emerald-300" />}
-              <p className="mt-3 text-sm text-white/85">{label}</p>
+          {["Awareness session", "Student onboarding", "7-day program", "Implementation"].map((step, i) => (
+            <div key={step} className="rounded-xl border border-white/15 bg-white/10 p-5 text-center">
+              <Users className="mx-auto h-6 w-6 text-[#8bc8ff]" />
+              <p className="mt-2 font-semibold">Step {i + 1}</p>
+              <p className="mt-1 text-sm text-white/80">{step}</p>
+              {i < 3 && <ChevronRight className="mx-auto mt-3 hidden h-4 w-4 text-white/40 md:block" />}
             </div>
           ))}
         </div>
       </section>
 
-      <section id="contact" className="mx-auto max-w-4xl px-6 pb-24 text-center">
-        <h2 className="text-4xl font-bold">Bring Finverze to your campus</h2>
-        <p className="mt-3 text-white/70">College teams and students can both fill this form.</p>
-        <form action="https://formspree.io/f/xnjwqyyq" method="POST" className="mt-10 grid gap-4 text-left md:grid-cols-2">
-          <input name="name" required placeholder="Full Name" className="h-12 rounded-xl border border-emerald-400/30 bg-white/10 px-4 placeholder:text-white/55" />
-          <input name="phone" required placeholder="Phone Number" className="h-12 rounded-xl border border-emerald-400/30 bg-white/10 px-4 placeholder:text-white/55" />
-          <input name="email" type="email" required placeholder="Email" className="h-12 rounded-xl border border-emerald-400/30 bg-white/10 px-4 placeholder:text-white/55" />
-          <input name="contact" required placeholder="College / Organization / Student" className="h-12 rounded-xl border border-emerald-400/30 bg-white/10 px-4 placeholder:text-white/55" />
-          <textarea name="objective" required placeholder="Objective (What do you want to achieve?)" className="md:col-span-2 min-h-28 rounded-xl border border-emerald-400/30 bg-white/10 px-4 py-3 placeholder:text-white/55" />
-          <button type="submit" className="md:col-span-2 h-12 rounded-xl bg-emerald-500 font-semibold text-slate-950 transition hover:bg-emerald-400">Submit Request</button>
-        </form>
+      <section className="mx-auto w-full max-w-[1200px] px-6 pb-[100px] lg:px-20">
+        <h2 className="text-center text-4xl font-bold">Student Impact</h2>
+        <div className="mt-8 grid gap-4 md:grid-cols-2">
+          {["Financial awareness", "Better spending habits", "Confidence", "Decision-making"].map((item) => <div key={item} className="rounded-xl border border-white/15 bg-white/10 p-6 text-center">{item}</div>)}
+        </div>
       </section>
 
-      <footer className="border-t border-emerald-400/20 py-10 text-center text-sm text-white/70">
-        <p>finverze.com · founder@finverze.com</p>
-        <p className="mt-2 inline-flex items-center gap-2 text-emerald-300">Designed for real behavior change <ArrowRight className="h-4 w-4" /></p>
+      <section id="contact" className="mx-auto grid w-full max-w-[1200px] grid-cols-1 gap-8 px-6 pb-[100px] lg:grid-cols-12 lg:px-20">
+        <div className="lg:col-span-5">
+          <h2 className="text-4xl font-bold">Bring Finverze to Your Campus</h2>
+          <p className="mt-4 text-white/75">Book a session to explore how Finverze can be implemented in your college.</p>
+          <ul className="mt-6 space-y-3 text-white/85">
+            {['7-day structured program','Easy onboarding','Designed for students'].map((p)=> <li key={p} className="inline-flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-emerald-300" />{p}</li>)}
+          </ul>
+        </div>
+        <div className="lg:col-span-7 rounded-2xl bg-white p-6 text-slate-900 shadow-2xl">
+          <form action="https://formspree.io/f/xnjwqyyq" method="POST" className="grid gap-4 md:grid-cols-2">
+            <input name="college_name" required placeholder="College Name" className="h-12 rounded-xl border border-slate-200 px-4" />
+            <input name="contact_person" required placeholder="Contact Person" className="h-12 rounded-xl border border-slate-200 px-4" />
+            <input name="phone" required placeholder="Phone" className="h-12 rounded-xl border border-slate-200 px-4" />
+            <input name="email" type="email" required placeholder="Email" className="h-12 rounded-xl border border-slate-200 px-4" />
+            <input name="students" required placeholder="Number of Students" className="h-12 rounded-xl border border-slate-200 px-4 md:col-span-2" />
+            <button className="md:col-span-2 h-12 rounded-xl bg-[#1E90FF] font-semibold text-white transition hover:shadow-[0_0_24px_rgba(30,144,255,0.5)]">Book a Session</button>
+          </form>
+        </div>
+      </section>
+
+      <section className="mx-auto w-full max-w-[1200px] px-6 pb-[100px] text-center lg:px-20">
+        <h2 className="text-4xl font-bold">Start Building Financially Smart Students Today.</h2>
+        <Link href="#contact" className="mt-8 inline-flex items-center gap-2 rounded-xl bg-[#1E90FF] px-8 py-3 font-medium hover:shadow-[0_0_24px_rgba(30,144,255,0.55)]">Book a Session <ArrowRight className="h-4 w-4" /></Link>
+      </section>
+
+      <footer className="border-t border-white/10 py-10">
+        <div className="mx-auto flex w-full max-w-[1200px] flex-col items-center justify-between gap-4 px-6 text-sm text-white/70 md:flex-row lg:px-20">
+          <Image src="/images/finverze-logo.png" alt="Finverze" width={40} height={40} className="h-10 w-10" />
+          <div className="flex gap-4"><a href="#about">About</a><a href="#program">Program</a><a href="#contact">Contact</a></div>
+          <p className="inline-flex items-center gap-2"><Mail className="h-4 w-4" /> founder@finverze.com</p>
+          <p className="inline-flex items-center gap-2"><Building2 className="h-4 w-4" /> @finverze</p>
+        </div>
       </footer>
     </main>
   )
