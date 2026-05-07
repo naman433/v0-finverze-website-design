@@ -33,8 +33,7 @@ export default function Home() {
         </div>
         <div className="relative lg:col-span-6">
           <div className="absolute -inset-6 rounded-[28px] bg-[#2563EB]/20 blur-3xl" />
-          <img src="https://images.unsplash.com/photo-1619953942547-233eab5a70d6?auto=format&fit=crop&w=1600&q=80" alt="Students in discussion" className="relative h-full min-h-[420px] w-full rounded-2xl object-cover shadow-[0_30px_80px_rgba(0,0,0,0.45)]" />
-          <div className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-t from-[#071120]/55 via-transparent to-[#2563EB]/10" />
+          <div className="relative h-full min-h-[420px] w-full rounded-2xl border border-white/15 bg-[radial-gradient(circle_at_20%_20%,rgba(37,99,235,0.35),transparent_40%),radial-gradient(circle_at_80%_70%,rgba(14,165,233,0.25),transparent_40%),linear-gradient(145deg,#0f2038,#0a1629)] shadow-[0_30px_80px_rgba(0,0,0,0.45)]" />
         </div>
       </section>
 
@@ -46,7 +45,7 @@ export default function Home() {
 
       <section id="about" className="mx-auto grid max-w-[1200px] grid-cols-1 gap-8 px-6 pb-[100px] lg:grid-cols-12 lg:px-20">
         <div className="lg:col-span-7"><h2 className="text-4xl font-bold tracking-tight font-serif">Why Finverze Exists</h2><p className="mt-6 text-white/80">Most students graduate without developing healthy financial habits.</p><p className="mt-4 text-white/75">They may understand concepts theoretically, but very few know how to manage spending, build saving discipline, control financial behavior, or make responsible money decisions in real life.</p><p className="mt-4 text-white/75">Finverze was created to bridge this gap by helping students build practical financial habits that stay with them beyond college.</p></div>
-        <div className="relative lg:col-span-5"><div className="absolute -inset-4 rounded-3xl bg-[#2563EB]/15 blur-2xl" /><img src="https://images.unsplash.com/photo-1627556704302-624286467c65?auto=format&fit=crop&w=1400&q=80" alt="College seminar" className="relative h-full min-h-[340px] w-full rounded-2xl object-cover" /></div>
+        <div className="relative lg:col-span-5"><div className="absolute -inset-4 rounded-3xl bg-[#2563EB]/15 blur-2xl" /><div className="relative h-full min-h-[340px] w-full rounded-2xl border border-white/12 bg-[linear-gradient(145deg,#10233d,#0a1628)]" /></div>
       </section>
 
       <section id="programs" className="mx-auto max-w-[1200px] px-6 pb-[100px] lg:px-20">
@@ -62,14 +61,14 @@ export default function Home() {
 
       <section id="vision" className="mx-auto grid max-w-[1200px] grid-cols-1 gap-8 px-6 pb-[100px] lg:grid-cols-12 lg:px-20">
         <div className="lg:col-span-7"><h2 className="text-4xl font-bold tracking-tight font-serif">The Vision Behind Finverze</h2><p className="mt-6 text-white/78">Finverze was founded with a simple realization:</p><p className="mt-4 text-white/75">Students are taught how to build careers — but rarely how to build financial discipline, responsible money habits, or long-term financial awareness.</p><p className="mt-4 text-white/75">The vision behind Finverze is to create a generation of financially disciplined individuals by introducing practical money habits at an early stage of life.</p><p className="mt-4 text-white/75">What begins today through workshops and structured programs is intended to evolve into a long-term ecosystem focused on financial behavior, discipline, and personal financial growth for students and young adults.</p></div>
-        <div className="lg:col-span-5 rounded-3xl border border-white/10 bg-gradient-to-br from-[#2563EB]/20 to-[#1e293b]/50 p-5 backdrop-blur"><img src="https://images.unsplash.com/photo-1627556704302-624286467c65?auto=format&fit=crop&w=1200&q=80" alt="Founder vision portrait" className="h-full min-h-[320px] w-full rounded-2xl object-cover" /><p className="mt-3 text-center text-sm text-white/70">Founder Vision</p></div>
+        <div className="lg:col-span-5 rounded-3xl border border-white/10 bg-gradient-to-br from-[#2563EB]/20 to-[#1e293b]/50 p-5 backdrop-blur"><div className="h-full min-h-[320px] w-full rounded-2xl border border-white/15 bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.2),transparent_40%),radial-gradient(circle_at_75%_75%,rgba(37,99,235,0.45),transparent_45%),linear-gradient(145deg,#0f223b,#0a1629)]" /><p className="mt-3 text-center text-sm text-white/70">Founder Vision</p></div>
       </section>
 
       <section className="mx-auto max-w-[1200px] px-6 pb-[100px] lg:px-20"><h2 className="text-center text-4xl font-bold">Long-Term Vision</h2><div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-4">{['Building financially disciplined campuses','Creating habit-driven financial systems','Expanding student financial awareness nationwide','Developing a long-term financial growth ecosystem'].map((t)=><div key={t} className="rounded-2xl border border-white/10 bg-white/8 p-5 text-center">{t}</div>)}</div></section>
 
       <section className="mx-auto grid max-w-[1200px] grid-cols-1 gap-8 px-6 pb-[100px] lg:grid-cols-12 lg:px-20">
         <div className="lg:col-span-6"><h2 className="text-4xl font-bold tracking-tight font-serif">Why Colleges Choose Finverze</h2><ul className="mt-6 space-y-3 text-white/85">{['Enhances real-world student life skills','Adds value beyond academics','Practical and structured implementation','Supports student behavioral development','Flexible workshop and program formats'].map((p)=><li key={p} className="inline-flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-blue-300" />{p}</li>)}</ul></div>
-        <div className="lg:col-span-6"><img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80" alt="Workshop discussion" className="h-full min-h-[320px] w-full rounded-2xl object-cover" /></div>
+        <div className="lg:col-span-6"><div className="h-full min-h-[320px] w-full rounded-2xl border border-white/12 bg-[radial-gradient(circle_at_30%_30%,rgba(37,99,235,0.35),transparent_45%),linear-gradient(145deg,#10233d,#0a1628)]" /></div>
       </section>
 
       <section className="mx-auto max-w-[1200px] px-6 pb-[100px] lg:px-20"><h2 className="text-center text-4xl font-bold">Simple Implementation Process</h2><div className="mt-8 grid gap-4 md:grid-cols-4">{[[Handshake,'Initial Consultation'],[MapPinned,'Program Planning'],[Building2,'Campus Session Delivery'],[Users,'Student Engagement & Habit Building']].map(([I,t],idx)=><div key={t as string} className="rounded-2xl border border-white/12 bg-white/8 p-5 text-center"><I className="mx-auto h-6 w-6 text-[#9fc4ff]" /><p className="mt-3 text-sm">{t}</p>{idx<3 && <div className="mx-auto mt-3 hidden h-px w-10 bg-white/30 md:block" />}</div>)}</div></section>
